@@ -1,0 +1,27 @@
+<idea-plugin>
+    <id>com.jeno.kotlin-test-generation</id>
+    <name>Plugin display name here</name>
+    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+
+    <description><![CDATA[
+    Enter short description for your plugin here.<br>
+    <em>most HTML tags may be used</em>
+    ]]></description>
+
+    <depends>com.intellij.modules.lang</depends>
+    <depends>org.jetbrains.kotlin</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="com.jeno.action.ToKotlinTestAction"
+                class="com.jeno.action.ToKotlinTestAction"
+                text="Refactor to Kotlin test"
+                description="Generates a kotlin unit test">
+            <add-to-group group-id="RefactoringMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
